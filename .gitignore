@@ -1,0 +1,14 @@
+# IDE
+.idea/
+
+# Dependencies
+node_modules/
+
+# Build outputs
+packages/*/dist/
+packages/*/.next/
+packages/*/.output/
+apps/*/dist/
+apps/*/.next/
+apps/*/.output/
+apps/*/.wxt/
