@@ -9,7 +9,10 @@
     "lint": "pnpm run --recursive lint",
     "test": "pnpm run --recursive test",
     "clean": "pnpm run --recursive clean",
-    "install:all": "pnpm install"
+    "install:all": "pnpm install",
+    "db:up": "docker compose up -d postgres",
+    "db:down": "docker compose down",
+    "db:reset": "docker compose down -v && docker compose up -d postgres"
   },
   "keywords": [
     "job-search",
