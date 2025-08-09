@@ -21,6 +21,9 @@
     "db:migrate": "tsx src/migrate.ts",
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:reset": "docker compose down -v && docker compose up -d",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

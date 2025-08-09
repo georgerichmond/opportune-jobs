@@ -10,9 +10,9 @@
     "test": "pnpm run --recursive test",
     "clean": "pnpm run --recursive clean",
     "install:all": "pnpm install",
-    "db:up": "docker compose up -d postgres",
-    "db:down": "docker compose down",
-    "db:reset": "docker compose down -v && docker compose up -d postgres"
+    "db:up": "cd packages/database && docker compose --env-file ../../.env.local up -d",
+    "db:down": "cd packages/database && docker compose down",
+    "db:reset": "cd packages/database && docker compose down -v && docker compose --env-file ../../.env.local up -d"
   },
   "keywords": [
     "job-search",

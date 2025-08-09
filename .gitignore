@@ -12,3 +12,4 @@ apps/*/dist/
 apps/*/.next/
 apps/*/.output/
 apps/*/.wxt/
+.env.local

@@ -2,6 +2,8 @@
 
 This guide explains how to set up and use PostgreSQL 17 locally for development using Docker Compose.
 
+The Docker configuration is located in the `packages/database/` directory to keep database-related files organized together.
+
 ## Prerequisites
 
 - Docker Desktop installed and running
@@ -54,9 +56,11 @@ The `.env.local` file contains the database connection string that your applicat
 pnpm db:up
 ```
 Starts PostgreSQL 17 in a Docker container with:
-- Automatic initialization using `init.sql`
+- User and database created automatically via environment variables
 - Health checks to ensure database readiness
 - Persistent data volume
+
+*Note: Docker configuration is located in `packages/database/docker-compose.yml`*
 
 ### Stop Database
 ```bash
